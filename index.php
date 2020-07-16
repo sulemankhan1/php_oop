@@ -28,6 +28,14 @@ class Car {
     return $this->model;
   }
 
+  public function getCarDetails() {
+    return "
+    <h1>Name: $this->name</h1>
+    <h1>Color: $this->color</h1>
+    <h1>Model: $this->model</h1>
+    ";
+  }
+
 }
 
 
@@ -43,4 +51,4 @@ $cultus->setCarColor("white");
 $cultus->setCarModel("2015");
 
 
-echo $cultus->getCarModel();
+echo $vitz->getCarDetails();
